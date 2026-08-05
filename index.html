@@ -207,28 +207,25 @@
   </section>
   <!-- End teaser video -->
 
-  <!-- Paper abstract -->
+  <!-- Comparison figures (teaser plots) -->
   <section class="section hero is-light">
     <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Abstract</h2>
-          <div class="content has-text-justified">
-            <p>
-              World-action modeling has emerged as a promising paradigm for robotic control, as it empowers models to go beyond reacting to observations and anticipate how a scene will evolve.
-              However, existing WAMs often incur substantial computational overhead.
-              Pixel-space methods often allocate substantial capacity to visual details that may not be directly relevant to control, while some latent-space methods require multi-stage training to construct the reasoning space. The resulting training cost can make such methods difficult to train under modest computational budgets.
-              In this work, we propose LiLa-WAM, a lightweight world-action model that reasons about the future in a compact latent space and can be trained end-to-end on a single 24GB GPU.
-              Its core design is a compact latent reasoning space jointly shaped by future-state prediction and action generation, which keeps the model lightweight while remaining well aligned with control.
-              For task specification, we further propose the Visual Transition Token (VTT), a language-free task representation that encodes each task as a direction in visual feature space.
-              Experiments on RoboTwin 2.0, LIBERO, and real-robot tasks demonstrate LiLa-WAM's effectiveness, achieving 90.48% success across 50 RoboTwin tasks with single-GPU training.
-            </p>
-          </div>
+      <div class="columns is-centered is-vcentered">
+        <div class="column has-text-centered">
+          <img src="static/images/compare_robotwin.png" class="figure-img" alt="Success rate versus model size on RoboTwin 2.0"/>
+          <p class="figure-caption">Comparison on RoboTwin 2.0 (50 tasks).</p>
+        </div>
+        <div class="column has-text-centered">
+          <img src="static/images/compare_libero.png" class="figure-img" alt="Success rate versus model size on LIBERO"/>
+          <p class="figure-caption">Comparison on LIBERO.</p>
         </div>
       </div>
+      <p class="has-text-centered figure-caption">
+        Average success rate versus model size. LiLa-WAM achieves competitive performance while using substantially fewer parameters than most compared methods.
+      </p>
     </div>
   </section>
-  <!-- End paper abstract -->
+  <!-- End comparison figures -->
 
   <!-- Method / Framework -->
   <section class="section">
@@ -284,20 +281,6 @@
   <section class="section">
     <div class="container is-max-desktop">
       <h2 class="title is-3 has-text-centered">Results</h2>
-
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <img src="static/images/compare_robotwin.png" class="figure-img" style="max-width: 90%;" alt="Success rate versus model size on RoboTwin 2.0" loading="lazy"/>
-          <p class="figure-caption">Comparison on RoboTwin 2.0 (50 tasks).</p>
-        </div>
-        <div class="column has-text-centered">
-          <img src="static/images/compare_libero.png" class="figure-img" style="max-width: 90%;" alt="Success rate versus model size on LIBERO" loading="lazy"/>
-          <p class="figure-caption">Comparison on LIBERO.</p>
-        </div>
-      </div>
-      <p class="has-text-centered figure-caption" style="margin-bottom: 2rem;">
-        Average success rate versus model size. LiLa-WAM achieves competitive performance while using substantially fewer parameters than most compared methods.
-      </p>
 
       <div class="columns is-centered">
         <div class="column has-text-centered">
@@ -415,8 +398,31 @@
   </section>
   <!-- End real-robot experiments -->
 
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              World-action modeling has emerged as a promising paradigm for robotic control, as it empowers models to go beyond reacting to observations and anticipate how a scene will evolve.
+              However, existing WAMs often incur substantial computational overhead.
+              Pixel-space methods often allocate substantial capacity to visual details that may not be directly relevant to control, while some latent-space methods require multi-stage training to construct the reasoning space. The resulting training cost can make such methods difficult to train under modest computational budgets.
+              In this work, we propose LiLa-WAM, a lightweight world-action model that reasons about the future in a compact latent space and can be trained end-to-end on a single 24GB GPU.
+              Its core design is a compact latent reasoning space jointly shaped by future-state prediction and action generation, which keeps the model lightweight while remaining well aligned with control.
+              For task specification, we further propose the Visual Transition Token (VTT), a language-free task representation that encodes each task as a direction in visual feature space.
+              Experiments on RoboTwin 2.0, LIBERO, and real-robot tasks demonstrate LiLa-WAM's effectiveness, achieving 90.48% success across 50 RoboTwin tasks with single-GPU training.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
   <!-- BibTeX citation -->
-  <section class="section hero is-light" id="BibTeX">
+  <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <div class="bibtex-header">
         <h2 class="title">BibTeX</h2>
@@ -428,9 +434,9 @@
       <pre id="bibtex-code"><code>@article{yang2026lilawam,
   title={LiLa-WAM: Lightweight Latent Reasoning World-Action Model for Robotic Manipulation},
   author={Yang, Fan and Su, Yuting and Wang, Xiaobo and You, Yuncheng and Fan, Fugui and Wu, Yuting and Wu, Minghui and Zhao, Chenxu and Ning, Jiahong and Jing, Peiguang},
-  journal={arXiv preprint},
+  journal={arXiv preprint arXiv:2608.03701},
   year={2026},
-  url={https://github.com/teee000/LiLa-WAM}
+  url={https://arxiv.org/abs/2608.03701}
 }</code></pre>
     </div>
   </section>
