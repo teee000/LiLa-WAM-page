@@ -3,236 +3,145 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <!-- Primary Meta Tags -->
-  <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
-  <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
-  <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+  <meta name="title" content="LiLa-WAM: Lightweight Latent Reasoning World-Action Model for Robotic Manipulation">
+  <meta name="description" content="LiLa-WAM is a lightweight world-action model that reasons about the future in a compact latent space, trainable end-to-end on a single 24GB GPU, achieving 90.48% success across 50 RoboTwin 2.0 tasks.">
+  <meta name="keywords" content="world-action model, robotic manipulation, vision-language-action, latent reasoning, flow matching, DINOv3, RoboTwin, LIBERO, robot learning">
+  <meta name="author" content="Fan Yang, Yuting Su, Xiaobo Wang, Yuncheng You, Fugui Fan, Yuting Wu, Minghui Wu, Chenxu Zhao, Jiahong Ning, Peiguang Jing">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
-  
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
-  <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
-  <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
-  <!-- TODO: Create a 1200x630px preview image and update path -->
-  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
-  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
+  <meta property="og:site_name" content="LiLa-WAM">
+  <meta property="og:title" content="LiLa-WAM: Lightweight Latent Reasoning World-Action Model for Robotic Manipulation">
+  <meta property="og:description" content="A lightweight world-action model reasoning in a compact latent space, trainable end-to-end on a single 24GB GPU, achieving 90.48% success across 50 RoboTwin 2.0 tasks.">
+  <meta property="og:url" content="https://teee000.github.io/LiLa-WAM-page/">
+  <meta property="og:image" content="https://teee000.github.io/LiLa-WAM-page/static/images/FrameWork.png">
+  <meta property="og:image:alt" content="LiLa-WAM - Research Preview">
   <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
-  <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Same as social preview image above -->
-  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
+  <meta name="twitter:title" content="LiLa-WAM: Lightweight Latent Reasoning World-Action Model for Robotic Manipulation">
+  <meta name="twitter:description" content="A lightweight world-action model reasoning in a compact latent space, trainable end-to-end on a single 24GB GPU.">
+  <meta name="twitter:image" content="https://teee000.github.io/LiLa-WAM-page/static/images/FrameWork.png">
+  <meta name="twitter:image:alt" content="LiLa-WAM - Research Preview">
 
   <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
-  <meta name="citation_publication_date" content="2024">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
-  
+  <meta name="citation_title" content="LiLa-WAM: Lightweight Latent Reasoning World-Action Model for Robotic Manipulation">
+  <meta name="citation_author" content="Yang, Fan">
+  <meta name="citation_author" content="Su, Yuting">
+  <meta name="citation_author" content="Wang, Xiaobo">
+  <meta name="citation_author" content="You, Yuncheng">
+  <meta name="citation_author" content="Fan, Fugui">
+  <meta name="citation_author" content="Wu, Yuting">
+  <meta name="citation_author" content="Wu, Minghui">
+  <meta name="citation_author" content="Zhao, Chenxu">
+  <meta name="citation_author" content="Ning, Jiahong">
+  <meta name="citation_author" content="Jing, Peiguang">
+  <meta name="citation_publication_date" content="2026">
+
   <!-- Additional SEO -->
   <meta name="theme-color" content="#2563eb">
   <meta name="msapplication-TileColor" content="#2563eb">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  
+
   <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://ajax.googleapis.com">
-  <link rel="preconnect" href="https://documentcloud.adobe.com">
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
+  <title>LiLa-WAM: Lightweight Latent Reasoning World-Action Model for Robotic Manipulation</title>
 
-  <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
-  
   <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link rel="apple-touch-icon" href="static/images/favicon.ico">
-  
-  <!-- Critical CSS - Load synchronously -->
+
+  <!-- CSS -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-  
-  <!-- Non-critical CSS - Load asynchronously -->
-  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  
-  <!-- Fallback for browsers that don't support preload -->
-  <noscript>
-    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  </noscript>
-  
-  <!-- Fonts - Optimized loading -->
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Defer non-critical JavaScript -->
-  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+
+  <!-- JavaScript -->
   <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script defer src="static/js/bulma-carousel.min.js"></script>
-  <script defer src="static/js/bulma-slider.min.js"></script>
   <script defer src="static/js/index.js"></script>
-  
+
   <!-- Structured Data for Academic Papers -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "headline": "LiLa-WAM: Lightweight Latent Reasoning World-Action Model for Robotic Manipulation",
+    "description": "A lightweight world-action model that reasons about the future in a compact latent space jointly shaped by future-state prediction and action generation, trainable end-to-end on a single 24GB GPU.",
     "author": [
-      {
-        "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      }
+      {"@type": "Person", "name": "Fan Yang", "affiliation": {"@type": "Organization", "name": "Tianjin University"}},
+      {"@type": "Person", "name": "Yuting Su", "affiliation": {"@type": "Organization", "name": "Tianjin University"}},
+      {"@type": "Person", "name": "Xiaobo Wang"},
+      {"@type": "Person", "name": "Yuncheng You"},
+      {"@type": "Person", "name": "Fugui Fan"},
+      {"@type": "Person", "name": "Yuting Wu"},
+      {"@type": "Person", "name": "Minghui Wu"},
+      {"@type": "Person", "name": "Chenxu Zhao"},
+      {"@type": "Person", "name": "Jiahong Ning"},
+      {"@type": "Person", "name": "Peiguang Jing", "affiliation": {"@type": "Organization", "name": "Tianjin University"}}
     ],
-    "datePublished": "2024-01-01",
-    "publisher": {
-      "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
-    },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
+    "datePublished": "2026",
+    "url": "https://teee000.github.io/LiLa-WAM-page/",
+    "image": "https://teee000.github.io/LiLa-WAM-page/static/images/FrameWork.png",
+    "keywords": ["world-action model", "robotic manipulation", "latent reasoning", "robot learning"],
     "isAccessibleForFree": true,
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "mainEntity": {
       "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
-    },
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
-      },
-      {
-        "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
-      }
-    ]
+      "@id": "https://teee000.github.io/LiLa-WAM-page/"
+    }
   }
   </script>
-  
-  <!-- Website/Organization Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
-    "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
-    ]
-  }
-  </script>
+
+  <style>
+    .figure-img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      border-radius: 6px;
+    }
+    .figure-caption {
+      margin-top: 0.75rem;
+      color: #555;
+      font-size: 0.95rem;
+    }
+    .results-table {
+      margin: 0 auto;
+      font-size: 0.95rem;
+    }
+    .results-table th, .results-table td {
+      padding: 0.4em 0.9em;
+      text-align: center;
+    }
+    .results-table th:first-child, .results-table td:first-child {
+      text-align: left;
+    }
+    .results-table .ours-row {
+      font-weight: 700;
+      background-color: #f0f6ff;
+    }
+    .table-wrap {
+      overflow-x: auto;
+      margin-bottom: 1.5rem;
+    }
+  </style>
 </head>
 <body>
-
 
   <!-- Scroll to Top Button -->
   <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
     <i class="fas fa-chevron-up"></i>
   </button>
-
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
 
   <main id="main-content">
   <section class="hero">
@@ -240,238 +149,274 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">LiLa-WAM: Lightweight Latent Reasoning World-Action Model for Robotic Manipulation</h1>
             <div class="is-size-5 publication-authors">
-              <!-- TODO: Replace with your paper authors and their personal links -->
+              <span class="author-block">Fan Yang<sup>1</sup>,</span>
+              <span class="author-block">Yuting Su<sup>1</sup>,</span>
+              <span class="author-block">Xiaobo Wang<sup>2,5</sup>,</span>
+              <span class="author-block">Yuncheng You<sup>1</sup>,</span>
+              <span class="author-block">Fugui Fan<sup>1</sup>,</span>
+              <span class="author-block">Yuting Wu<sup>4</sup>,</span>
+              <span class="author-block">Minghui Wu<sup>3</sup>,</span>
+              <span class="author-block">Chenxu Zhao<sup>3</sup>,</span>
+              <span class="author-block">Jiahong Ning<sup>5</sup>,</span>
+              <span class="author-block">Peiguang Jing<sup>1</sup></span>
+            </div>
+
+            <div class="is-size-6 publication-authors">
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+                <sup>1</sup>Tianjin University &nbsp;&nbsp;
+                <sup>2</sup>Shenzhen University of Advanced Technology &nbsp;&nbsp;
+                <sup>3</sup>Mininglamp Technology<br>
+                <sup>4</sup>Ministry of Natural Resources Information Center &nbsp;&nbsp;
+                <sup>5</sup>Sangfor Technologies Inc.
+              </span>
+            </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- TODO: Replace with your GitHub repository URL -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://github.com/teee000/LiLa-WAM" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
                     <span>Code</span>
                   </a>
                 </span>
-
-                <!-- TODO: Update with your arXiv paper ID -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
+  <!-- Teaser video -->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <video id="tree" autoplay controls muted loop height="100%" preload="metadata">
+          <source src="static/videos/grid_showcase_10x5.mp4" type="video/mp4">
+        </video>
         <h2 class="subtitle has-text-centered">
-          First image description.
+          LiLa-WAM rollouts on all 50 RoboTwin 2.0 tasks. A single 0.5B model, trained end-to-end on one 24 GB GPU, achieves a 90.48% average success rate.
         </h2>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
     </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
+  </section>
+  <!-- End teaser video -->
 
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              World-action modeling has emerged as a promising paradigm for robotic control, as it empowers models to go beyond reacting to observations and anticipate how a scene will evolve.
+              However, existing WAMs often incur substantial computational overhead.
+              Pixel-space methods often allocate substantial capacity to visual details that may not be directly relevant to control, while some latent-space methods require multi-stage training to construct the reasoning space. The resulting training cost can make such methods difficult to train under modest computational budgets.
+              In this work, we propose LiLa-WAM, a lightweight world-action model that reasons about the future in a compact latent space and can be trained end-to-end on a single 24GB GPU.
+              Its core design is a compact latent reasoning space jointly shaped by future-state prediction and action generation, which keeps the model lightweight while remaining well aligned with control.
+              For task specification, we further propose the Visual Transition Token (VTT), a language-free task representation that encodes each task as a direction in visual feature space.
+              Experiments on RoboTwin 2.0, LIBERO, and real-robot tasks demonstrate LiLa-WAM's effectiveness, achieving 90.48% success across 50 RoboTwin tasks with single-GPU training.
+            </p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End youtube video -->
+  </section>
+  <!-- End paper abstract -->
 
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
+  <!-- Method / Framework -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h2 class="title is-3">Method</h2>
+          <div class="content has-text-justified">
+            <p>
+              LiLa-WAM builds on a frozen DINOv3 encoder and concentrates all trainable capacity in a single lightweight stream.
+              At its core, the <b>Foresight-Aware Action Expert</b> unifies future-state prediction and action generation:
+              reasoning tokens, the VTT task token, proprioceptive tokens, and noisy action tokens are processed in one sequence,
+              jointly producing the action velocity and foresight tokens. Foresight tokens are supervised in the DINOv3 feature space
+              during training and discarded at inference, introducing no extra test-time cost.
+            </p>
+          </div>
+          <img src="static/images/FrameWork.png" class="figure-img" alt="Overview of the LiLa-WAM architecture"/>
+          <p class="figure-caption">
+            Overview of LiLa-WAM. The Foresight-Aware Action Expert unifies reasoning tokens, the VTT, proprioceptive tokens, and noisy action tokens in a single stream, jointly producing the action velocity and foresight tokens, which are supervised in the feature space during training and discarded at inference.
+          </p>
         </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
       </div>
     </div>
   </section>
-<!--End paper poster -->
+  <!-- End method -->
 
+  <!-- Visual Transition Token -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h2 class="title is-3">Visual Transition Token</h2>
+          <div class="content has-text-justified">
+            <p>
+              The <b>Visual Transition Token (VTT)</b> is a language-free task representation computed as the mean difference
+              between last- and first-frame visual embeddings over a task's demonstrations. It encodes each task as a
+              <i>transition direction in feature space</i> — what the task changes about the scene — requiring neither text
+              nor a goal image at test time. Per-episode transition embeddings form well-separated, semantically meaningful
+              clusters across tasks.
+            </p>
+          </div>
+          <img src="static/images/vtt_tsne.png" class="figure-img" alt="Visual Transition Token illustration and t-SNE embedding structure" loading="lazy"/>
+          <p class="figure-caption">
+            Left: illustration of the VTT, computed as the mean difference between last- and first-frame embeddings. Right: t-SNE of per-episode visual transition embeddings on 10 RoboTwin 2.0 tasks (clean and randomized).
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End VTT -->
 
+  <!-- Results -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Results</h2>
 
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <img src="static/images/compare_robotwin.png" class="figure-img" style="max-width: 90%;" alt="Success rate versus model size on RoboTwin 2.0" loading="lazy"/>
+          <p class="figure-caption">Comparison on RoboTwin 2.0 (50 tasks).</p>
+        </div>
+        <div class="column has-text-centered">
+          <img src="static/images/compare_libero.png" class="figure-img" style="max-width: 90%;" alt="Success rate versus model size on LIBERO" loading="lazy"/>
+          <p class="figure-caption">Comparison on LIBERO.</p>
+        </div>
+      </div>
+      <p class="has-text-centered figure-caption" style="margin-bottom: 2rem;">
+        Average success rate versus model size. LiLa-WAM achieves competitive performance while using substantially fewer parameters than most compared methods.
+      </p>
+
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h3 class="title is-5">RoboTwin 2.0 (50 tasks)</h3>
+          <div class="table-wrap">
+            <table class="table results-table is-bordered is-striped">
+              <thead>
+                <tr><th>Method</th><th>Params</th><th>Clean</th><th>Random</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>ABot-M0</td><td>4B</td><td>81.20</td><td>80.40</td></tr>
+                <tr><td>StarVLA</td><td>4B</td><td>88.20</td><td>88.30</td></tr>
+                <tr><td>&pi;<sub>0</sub></td><td>3B</td><td>65.92</td><td>58.40</td></tr>
+                <tr><td>&pi;<sub>0.5</sub></td><td>3B</td><td>82.74</td><td>76.76</td></tr>
+                <tr><td>X-VLA</td><td>0.9B</td><td>72.88</td><td>72.84</td></tr>
+                <tr><td>Motus</td><td>8B</td><td>88.66</td><td>87.02</td></tr>
+                <tr><td>GigaWorld-Policy</td><td>5B</td><td>86.36</td><td>85.04</td></tr>
+                <tr><td>Being-H0.7</td><td>3B</td><td>90.20</td><td><b>89.60</b></td></tr>
+                <tr class="ours-row"><td>LiLa-WAM (Ours)</td><td>0.5B</td><td><b>90.48</b></td><td>89.04</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="figure-caption">Average success rates (%) over 50 RoboTwin 2.0 tasks.</p>
+        </div>
+      </div>
+
+      <div class="columns is-centered" style="margin-top: 2rem;">
+        <div class="column has-text-centered">
+          <h3 class="title is-5">LIBERO</h3>
+          <div class="table-wrap">
+            <table class="table results-table is-bordered is-striped">
+              <thead>
+                <tr><th>Method</th><th>Params</th><th>Spatial</th><th>Object</th><th>Goal</th><th>Long</th><th>AVG</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>OpenVLA</td><td>7B</td><td>84.7</td><td>88.4</td><td>79.2</td><td>53.7</td><td>76.5</td></tr>
+                <tr><td>OpenVLA-OFT</td><td>7B</td><td>97.6</td><td>98.4</td><td><b>97.9</b></td><td>94.5</td><td><b>97.1</b></td></tr>
+                <tr><td>StarVLA</td><td>4B</td><td>97.8</td><td>98.6</td><td>96.2</td><td>93.8</td><td>96.6</td></tr>
+                <tr><td>&pi;<sub>0</sub></td><td>3B</td><td>96.8</td><td><b>98.8</b></td><td>95.8</td><td>85.2</td><td>94.1</td></tr>
+                <tr><td>GR00T-N1.6</td><td>3.3B</td><td>97.7</td><td>98.5</td><td>97.5</td><td>94.4</td><td>97.0</td></tr>
+                <tr><td>JEPA-VLA</td><td>--</td><td>97.2</td><td>98.0</td><td>95.6</td><td><b>94.8</b></td><td>96.4</td></tr>
+                <tr><td>SmolVLA</td><td>2B</td><td>93.0</td><td>94.0</td><td>91.0</td><td>77.0</td><td>88.8</td></tr>
+                <tr><td>EVO-1</td><td>0.8B</td><td>92.7</td><td>97.7</td><td>96.3</td><td>92.3</td><td>94.8</td></tr>
+                <tr class="ours-row"><td>LiLa-WAM (Ours)</td><td>0.5B</td><td><b>98.0</b></td><td><b>98.8</b></td><td>97.2</td><td>94.2</td><td><b>97.1</b></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="figure-caption">Success rates (%) on the four LIBERO suites (Spatial, Object, Goal, and Long).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End results -->
+
+  <!-- Attention analysis -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h2 class="title is-3">What Do the VTT and Action Tokens Attend To?</h2>
+          <div class="content has-text-justified">
+            <p>
+              The VTT and the action tokens exhibit a clear division of labor: the VTT focuses on the objects that the task
+              acts upon (e.g., the fan and its target pad, the block and the hammer), while the action tokens attend more to
+              the arm and gripper, with responses spreading over the manipulation region — matching the intuition that task
+              specification captures <i>what</i> to manipulate, whereas action generation tracks <i>how</i> the manipulator moves.
+            </p>
+          </div>
+          <img src="static/images/attn_maps.png" class="figure-img" style="max-width: 75%;" alt="Attention maps of the VTT and action tokens" loading="lazy"/>
+          <p class="figure-caption">Attention maps of the VTT and action tokens.</p>
+
+          <img src="static/images/attn_layers.png" class="figure-img" style="margin-top: 2rem;" alt="Per-layer attention maps of the VTT and action tokens" loading="lazy"/>
+          <p class="figure-caption">
+            Per-layer attention maps of the VTT and action tokens across the 12 DiT blocks. The VTT attends more to the placement area, whereas the action tokens attend more to the object being manipulated (red boxes).
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End attention analysis -->
+
+  <!-- Real-robot experiments -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h2 class="title is-3">Real-Robot Experiments</h2>
+          <div class="content has-text-justified">
+            <p>
+              We evaluate LiLa-WAM on an AgileX PiPer 6-DoF robotic arm with a RealSense D435 third-person camera on four
+              real-world tasks with randomized object placements. Foresight supervision improves the average success rate
+              from 74.0% to 82.0% over the ablated variant without the foresight loss.
+            </p>
+          </div>
+          <img src="static/images/real_robot_tasks.png" class="figure-img" alt="Execution process of the four real-robot tasks" loading="lazy"/>
+          <p class="figure-caption">Execution process of the four real-robot tasks.</p>
+
+          <div class="table-wrap" style="margin-top: 2rem;">
+            <table class="table results-table is-bordered is-striped">
+              <thead>
+                <tr><th>Method</th><th>Button</th><th>Block</th><th>Banana</th><th>Basketball</th><th>Avg</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>w/o foresight loss</td><td>72</td><td>84</td><td>92</td><td>48</td><td>74.0</td></tr>
+                <tr class="ours-row"><td>LiLa-WAM</td><td><b>86</b></td><td><b>90</b></td><td><b>96</b></td><td><b>56</b></td><td><b>82.0</b></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="figure-caption">
+            Real-robot success rates (%). The four tasks are <i>push the green button</i> (Button), <i>put the red block on the box</i> (Block), <i>put the banana on the pink plate</i> (Banana), and <i>put the basketball in the hoop</i> (Basketball).
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End real-robot experiments -->
+
+  <!-- BibTeX citation -->
+  <section class="section hero is-light" id="BibTeX">
     <div class="container is-max-desktop content">
       <div class="bibtex-header">
         <h2 class="title">BibTeX</h2>
@@ -480,41 +425,33 @@
           <span class="copy-text">Copy</span>
         </button>
       </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
+      <pre id="bibtex-code"><code>@article{yang2026lilawam,
+  title={LiLa-WAM: Lightweight Latent Reasoning World-Action Model for Robotic Manipulation},
+  author={Yang, Fan and Su, Yuting and Wang, Xiaobo and You, Yuncheng and Fan, Fugui and Wu, Yuting and Wu, Minghui and Zhao, Chenxu and Ning, Jiahong and Jing, Peiguang},
+  journal={arXiv preprint},
+  year={2026},
+  url={https://github.com/teee000/LiLa-WAM}
 }</code></pre>
     </div>
-</section>
-<!--End BibTex citation -->
-
+  </section>
+  <!-- End BibTeX citation -->
 
   <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+              Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+  </main>
+</body>
+</html>
